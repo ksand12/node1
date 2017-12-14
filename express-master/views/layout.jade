@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		div.menu#my_menu
+			a(href='#') Главная
+			a(href='#') Новости
+			a(href='#') О компании
+			a(href='#') Услуги
+		form(method='post', action='/reg')
+			input(type='text', name='name')
+			input(type='text', name='password')
+			button(type='submit', name='submit', value='submit')
+	block content
