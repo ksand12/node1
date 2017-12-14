@@ -14,7 +14,7 @@ router.get('/:id?', function(req, res, next) {
 });
 
 router.post('/reg',function(req,res,next){
-	console.log(req.body.username);
+	console.log(req.body.name);
 	console.log(req.body.password);
 	res.redirect('/');
 });
